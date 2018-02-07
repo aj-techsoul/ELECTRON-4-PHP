@@ -1,7 +1,6 @@
+![alt text](https://github.com/AJ-TechSoul/ELECTRON-4-PHP/blob/master/electron4php.jpg?raw=true)
 # ELECTRON-4-PHP
 An easiest way to use php in electron
-
-![alt text](https://github.com/AJ-TechSoul/ELECTRON-4-PHP/blob/master/electron4php.jpg?raw=true)
 
 **Clone and run for a quick way to see Electron4PHP in action.**
 ```
