@@ -1,0 +1,23 @@
+{
+  "name": "ELECTRON4PHP",
+  "version": "1.0.0",
+  "description": "An easiest way to use php in electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/AJ-TechSoul/ELECTRON-4-PHP",
+  "keywords": [
+    "Electron",
+    "php",
+    "techsoul"
+  ],
+  "author": "Ajay Kumar",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^1.7.12"
+  },
+  "dependencies": {
+    "php-server-manager": "^1.2.1"
+  }
+}
