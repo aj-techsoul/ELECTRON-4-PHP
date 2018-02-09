@@ -12,7 +12,7 @@ const url = require('url')
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
-    port: 55555,
+    port: 3000,
     directives: {
         display_errors: 1,
         expose_php: 0
