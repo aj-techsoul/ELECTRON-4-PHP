@@ -1,0 +1,96 @@
+This snapshot was automatically generated on
+Wed, 31 Jan 2018 20:10:35 +0000
+
+Version: 7.2.2
+Branch: HEAD
+Build: C:\php-snap-build\php72\vc15\x64\obj\Release
+
+Built-in Extensions
+===========================
+Core
+bcmath
+calendar
+ctype
+date
+filter
+hash
+iconv
+json
+mcrypt
+SPL
+pcre
+readline
+Reflection
+session
+standard
+mysqlnd
+tokenizer
+zip
+zlib
+libxml
+dom
+PDO
+openssl
+SimpleXML
+xml
+wddx
+xmlreader
+xmlwriter
+curl
+ftp
+sqlite3
+Phar
+mbstring
+mysqli
+
+
+Dependency information:
+Module: php_curl.dll
+===========================
+	libssh2.dll
+	nghttp2.dll
+	libcrypto-1_1-x64.dll
+	libssl-1_1-x64.dll
+
+Module: php_enchant.dll
+===========================
+	libenchant.dll
+
+Module: php_ftp.dll
+===========================
+	libcrypto-1_1-x64.dll
+	libssl-1_1-x64.dll
+
+Module: php_intl.dll
+===========================
+	icuuc60.dll
+	icuin60.dll
+	icuio60.dll
+
+Module: php_ldap.dll
+===========================
+	libsasl.dll
+	libcrypto-1_1-x64.dll
+	libssl-1_1-x64.dll
+
+Module: php_openssl.dll
+===========================
+	libcrypto-1_1-x64.dll
+	libssl-1_1-x64.dll
+
+Module: php_pgsql.dll
+===========================
+	libpq.dll
+
+Module: php_snmp.dll
+===========================
+	libcrypto-1_1-x64.dll
+
+Module: php_sodium.dll
+===========================
+	libsodium.dll
+
+Module: php_pdo_pgsql.dll
+===========================
+	libpq.dll
+
