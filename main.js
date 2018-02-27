@@ -12,10 +12,11 @@ const url = require('url')
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
-    port: 3000,
+    port: 5555,
+    directory: __dirname,
     directives: {
         display_errors: 1,
-        expose_php: 0
+        expose_php: 1
     }
 });
 
@@ -41,6 +42,8 @@ mainWindow.loadURL(url.format({
   slashes: true
 }))
 */
+ const {shell} = require('electron')
+ shell.showItemInFolder('fullPath')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()

@@ -4,7 +4,11 @@
   "description": "An easiest way to use php in electron",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --asar=false --icon=icons/logo.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar=false --platform=win32 --arch=ia32 --icon=icons/logo.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=false --platform=linux --arch=x64 --icon=icons/logo.png --prune=true --out=release-builds"
   },
   "repository": "https://github.com/AJ-TechSoul/ELECTRON-4-PHP",
   "keywords": [
@@ -15,7 +19,8 @@
   "author": "Ajay Kumar",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.12"
+    "electron": "^1.7.12",
+    "electron-packager": "^11.0.1"
   },
   "dependencies": {
     "php-server-manager": "^1.2.1"
