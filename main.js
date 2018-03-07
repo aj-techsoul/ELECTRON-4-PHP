@@ -1,12 +1,63 @@
 const electron = require('electron')
 // Module to control application life.
 const app = electron.app
+// Module for mennu
+const Menu = electron.Menu
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
 const path = require('path')
 const url = require('url')
 
+/////////////////////////////
+
+///////////////////////////////
+// Copy paste fixed by this 
+
+app.on('ready', () => {
+  createWindow()
+  if (process.platform === 'darwin') {
+    var template = [{
+      label: 'FromScratch',
+      submenu: [{
+        label: 'Quit',
+        accelerator: 'CmdOrCtrl+Q',
+        click: function() { app.quit(); }
+      }]
+    }, {
+      label: 'Edit',
+      submenu: [{
+        label: 'Undo',
+        accelerator: 'CmdOrCtrl+Z',
+        selector: 'undo:'
+      }, {
+        label: 'Redo',
+        accelerator: 'Shift+CmdOrCtrl+Z',
+        selector: 'redo:'
+      }, {
+        type: 'separator'
+      }, {
+        label: 'Cut',
+        accelerator: 'CmdOrCtrl+X',
+        selector: 'cut:'
+      }, {
+        label: 'Copy',
+        accelerator: 'CmdOrCtrl+C',
+        selector: 'copy:'
+      }, {
+        label: 'Paste',
+        accelerator: 'CmdOrCtrl+V',
+        selector: 'paste:'
+      }, {
+        label: 'Select All',
+        accelerator: 'CmdOrCtrl+A',
+        selector: 'selectAll:'
+      }]
+    }];
+    var osxMenu = Menu.buildFromTemplate(template);
+    Menu.setApplicationMenu(osxMenu);
+  }
+})
 
 // PHP SERVER CREATION /////
 const PHPServer = require('php-server-manager');
