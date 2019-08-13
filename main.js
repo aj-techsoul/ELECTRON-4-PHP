@@ -63,7 +63,7 @@ app.on('ready', () => {
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
-    php: "php\\php.exe",  // <==== ADDED/SUGGESTED by @juppwerner
+  
     port: 5555,
     directory: __dirname,
     directives: {
