@@ -114,7 +114,7 @@ mainWindow.loadURL(url.format({
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+//app.on('ready', createWindow) // <== this is extra so commented, enabling this can show 2 windows.
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
