@@ -12,6 +12,7 @@ const url = require('url')
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
+    php: "php\\php.exe",  // <==== ADDED/SUGGESTED by @juppwerner
     port: 3000,
     directives: {
         display_errors: 1,
@@ -59,7 +60,7 @@ mainWindow.loadURL(url.format({
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.on('ready', createWindow)
+//app.on('ready', createWindow)
 
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
