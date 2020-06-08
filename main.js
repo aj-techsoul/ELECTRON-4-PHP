@@ -15,7 +15,7 @@ const url = require('url')
 // Copy paste fixed by this 
 
 app.on('ready', () => {
-  createWindow()
+//  createWindow() // commented for avoiding double window issue
   if (process.platform === 'darwin') {
     var template = [{
       label: 'FromScratch',
