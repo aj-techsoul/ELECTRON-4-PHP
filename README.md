@@ -84,6 +84,11 @@ gulp.task('php-server', done => {
 });
 ```
 
+## LARAVEL in ELECTRON-4-PHP
+Well, here is a video on "Laravel | PHP Desktop Application using Electron?" made by theGimmickBox , the person makes great videos on Life H@cks, Tips & Tricks :D etc. 
+Please checkout this video on implementation on Laravel -> https://www.youtube.com/watch?v=HwRAaywZXAQ
+
+
 ## License
 
 [CC0 1.0 (Public Domain)](LICENSE.md)
