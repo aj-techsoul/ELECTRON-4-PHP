@@ -19,7 +19,7 @@
   "author": "Ajay Kumar",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.12",
+    "electron": "^9.1.0",
     "electron-packager": "^11.0.1"
   },
   "dependencies": {
