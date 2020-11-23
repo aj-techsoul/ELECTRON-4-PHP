@@ -12,12 +12,13 @@ const url = require('url')
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
-    php: "php\\php.exe",  // <==== ADDED/SUGGESTED by @juppwerner
-    port: 3000,
-    directives: {
-        display_errors: 1,
-        expose_php: 0
-    }
+php: "php/php.exe", // <==== Suggested by @Rajeshwaran2001  & @PeaKyyI
+port: 5555,
+directory: __dirname,
+directives: {
+display_errors: 1,
+expose_php: 1
+}
 });
 
 //////////////////////////
