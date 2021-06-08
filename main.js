@@ -63,9 +63,9 @@ app.on('ready', () => {
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
-  
+    php: __dirname + "/php/php.exe",
     port: 5555,
-    directory: __dirname,
+    directory: __dirname + "/www/"
     directives: {
         display_errors: 1,
         expose_php: 1
@@ -82,7 +82,7 @@ function createWindow () {
 
   server.run();
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 800, height: 600, icon: "icon.ico"})
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://'+server.host+':'+server.port+'/')
