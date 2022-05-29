@@ -62,7 +62,21 @@ app.on('ready', () => {
 // PHP SERVER CREATION /////
 const PHPServer = require('php-server-manager');
 
-const server = new PHPServer({
+let server
+  if (process.platform === 'win32') {
+
+server = new PHPServer({
+    php: `${__dirname}/php/php.exe`,
+    port: 5555,
+    directory: __dirname,
+    directives: {
+        display_errors: 1,
+        expose_php: 1
+    }
+    });
+  } else {
+
+server = new PHPServer({
   
     port: 5555,
     directory: __dirname,
@@ -71,6 +85,7 @@ const server = new PHPServer({
         expose_php: 1
     }
 });
+};
 
 //////////////////////////
 
@@ -82,7 +97,7 @@ function createWindow () {
 
   server.run();
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 800, height: 600, icon: "icon.ico"})
 
   // and load the index.html of the app.
   mainWindow.loadURL('http://'+server.host+':'+server.port+'/')
@@ -136,6 +151,3 @@ app.on('activate', function () {
 })
 
 
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
