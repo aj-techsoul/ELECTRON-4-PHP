@@ -18,10 +18,7 @@ bat.on('exit', (code) => {
   console.log(`Child exited with code ${code}`);
 });
 }
-//////////////////////////////////////
 
-// PHP SERVER CREATION /////
-/*
 const PHPServer = require('php-server-manager');
 
 const server = new PHPServer({
@@ -32,5 +29,3 @@ const server = new PHPServer({
     }
 });
 
-*/
-//////////////////////////

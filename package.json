@@ -16,7 +16,7 @@
     "php",
     "techsoul"
   ],
-  "author": "Ajay Kumar",
+  "author": "Ajay Kumar, André Rodrigues",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^1.7.12",
