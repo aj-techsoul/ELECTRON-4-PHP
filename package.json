@@ -19,10 +19,10 @@
   "author": "Ajay Kumar",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^1.7.12",
-    "electron-packager": "^11.0.1"
+    "electron": "^13.1.0",
+    "electron-packager": "^15.2.0"
   },
   "dependencies": {
-    "php-server-manager": "^1.2.1"
+    "php-server-manager": "^1.3.3"
   }
 }
