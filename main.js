@@ -62,7 +62,21 @@ app.on('ready', () => {
 // PHP SERVER CREATION /////
 const PHPServer = require('php-server-manager');
 
-const server = new PHPServer({
+let server
+  if (process.platform === 'win32') {
+
+server = new PHPServer({
+    php: `${__dirname}/php/php.exe`,
+    port: 5555,
+    directory: __dirname,
+    directives: {
+        display_errors: 1,
+        expose_php: 1
+    }
+    });
+  } else {
+
+server = new PHPServer({
   
     port: 5555,
     directory: __dirname,
@@ -71,6 +85,7 @@ const server = new PHPServer({
         expose_php: 1
     }
 });
+};
 
 //////////////////////////
 
